@@ -5,29 +5,25 @@
 <h2 id="总结">总结</h2>
 <p>希望这篇文章对你有所帮助！</p>
 ]]></content:encoded></item><item><title/><link>https://weuseai.org/1/01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://weuseai.org/1/01/</guid><description>&lt;h1 id="aigithubcloudflare-半小时搭建属于自己的博客">AI+GitHub+cloudflare 半小时搭建属于自己的博客&lt;/h1>
-&lt;h1 id="aigithub-cloudflare--半小时搭建属于自己的博客">AI+GitHub+**# cloudflare &lt;strong>&lt;strong># 半小时搭建属于自己的博客&lt;/strong>&lt;/strong>#&lt;/h1>
-&lt;p>**
-&lt;strong>前言&lt;/strong>：为什么要搭建属于自己的博客？&lt;/p>
+&lt;p>&lt;strong>前言&lt;/strong>：为什么要搭建属于自己的博客？&lt;/p>
 &lt;p>为了通过输出倒逼输入。
 前段时间听了个播客说，正确的学习应该是先确定自己要输出的东西，然后在去查询资料，而不是在网上收集一堆信息，这些信息很可能会一直躺在收藏夹里，没啥用。&lt;/p></description><content:encoded><![CDATA[<h1 id="aigithubcloudflare-半小时搭建属于自己的博客">AI+GitHub+cloudflare 半小时搭建属于自己的博客</h1>
-<h1 id="aigithub-cloudflare--半小时搭建属于自己的博客">AI+GitHub+**# cloudflare <strong><strong># 半小时搭建属于自己的博客</strong></strong>#</h1>
-<p>**
-<strong>前言</strong>：为什么要搭建属于自己的博客？</p>
+<p><strong>前言</strong>：为什么要搭建属于自己的博客？</p>
 <p>为了通过输出倒逼输入。
 前段时间听了个播客说，正确的学习应该是先确定自己要输出的东西，然后在去查询资料，而不是在网上收集一堆信息，这些信息很可能会一直躺在收藏夹里，没啥用。</p>
 <p>再前一段时间看了个博客关于构建第二大脑和PARA，发现自己之前记的笔记没有动起来，好像也没啥用。</p>
 <p>博客地址：https://lutaonan.com/blog/apple-notes-and-para/</p>
 <p>理解PARA的关键是理解PARA的哲学：<strong>你记下的笔记应该要服务于你的行动</strong>。</p>
 <p>其实在大学期间也搭建过自己的博客，那会只是觉得把自己的学习和总结的内容发布到网上比较有意思，薅了阿里云的学生服务器，弄了个.cn的域名后发现网络要备案，又去折腾备案。</p>
-<h2 id="搭建步骤">搭建步骤：##</h2>
-<h3 id="步骤一服务器选择本着不花钱原则">步骤一：服务器选择（本着不花钱原则）###</h3>
-<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客" loading="lazy" src="images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.png"></p>
+<h2 id="搭建步骤">搭建步骤：</h2>
+<h3 id="步骤一服务器选择本着不花钱原则">步骤一：服务器选择（本着不花钱原则）</h3>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客" loading="lazy" src="images/0.png"></p>
 <p>好，了解到Cloudflare提供免费计划，那这不是赛博活菩萨吗？那就决定是你了</p>
 <h3 id="步骤二先了解下有哪些快速搭建博客方法">步骤二：先了解下有哪些快速搭建博客方法###</h3>
-<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-1" loading="lazy" src="images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-1.png"></p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-1" loading="lazy" src="images/-1.png"></p>
 <p>好，它说用CloudFlare加速GitHub页面搭建静态博客，可以，之前也简单了解过，看来这条路走的通。</p>
 <h3 id="步骤三既然大的方向确定了那就问它要方案">步骤三：既然大的方向确定了，那就问它要方案###</h3>
-<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-2" loading="lazy" src="images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-2.png"></p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-2" loading="lazy" src="images/AI+GitHub+cloudflare%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-2.png"></p>
 <p>这里了解到Hugo，速度快，配置简单，那就开整</p>
 <p>在网上做了这么多年消费者，看了这么多博客，那找一个自己喜欢的主题丢给AI问它是什么注意，好家伙它直接给我找出来了，并且给了主题开源的地址给我，那就点进去看一下，是不是要的主题。</p>
 <p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-3" loading="lazy" src="images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-3.png"></p>
