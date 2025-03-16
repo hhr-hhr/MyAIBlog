@@ -91,7 +91,7 @@ params:
   # SEO设置
   description: "这是我的个人博客，分享技术、生活和思考"  # 网站描述
   keywords: [博客, 技术, 编程, Hugo, PaperMod]         # 网站关键词
-  author: "您的名字"                # 作者名
+  # author: "您的名字"                # 作者名
   images: ["/images/cover.jpg"]    # 默认社交媒体分享图片
   DateFormat: "2006年01月02日"      # 日期格式
 
@@ -120,20 +120,20 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/hhr-hhr"
-    - name: twitter
-      url: "https://twitter.com/yourusername"
-    - name: zhihu
-      url: "https://www.zhihu.com/people/yourusername"
-    - name: bilibili
-      url: "https://space.bilibili.com/youruserid"
+    # - name: twitter
+    #   url: "https://twitter.com/yourusername"
+    # - name: zhihu
+    #   url: "https://www.zhihu.com/people/yourusername"
+    # - name: bilibili
+    #   url: "https://space.bilibili.com/youruserid"
     - name: email
-      url: "mailto:your.email@example.com"
+      url: "mailto:1023902984@qq.com"
     - name: rss
       url: "index.xml"
   
   # 编辑链接设置
   editPost:
-    URL: "https://github.com/yourusername/blog/blob/main/content"  # 编辑链接前缀
+    URL: "https://github.com/hhr-hhr/blog/blob/main/content"  # 编辑链接前缀
     Text: "建议修改"                # 编辑链接文本
     appendFilePath: true           # 是否附加文件路径
   
@@ -144,14 +144,14 @@ params:
   
   # utterances设置（GitHub Issues评论系统）
   utterances:
-    repo: "yourusername/blog-comments"  # GitHub仓库
+    repo: "yourusername/blogcomment"  # GitHub仓库
     issueTerm: "pathname"          # Issue映射方式
     label: "comment"               # Issue标签
     theme: "preferred-color-scheme" # 主题
   
   # giscus设置（GitHub Discussions评论系统）
   giscus:
-    repo: "yourusername/blog-comments"
+    repo: "blogcomment/blogcomment"
     repoId: ""                     # 仓库ID
     category: "Comments"           # 分类
     categoryId: ""                 # 分类ID
