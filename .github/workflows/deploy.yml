@@ -5,6 +5,12 @@ on:
     branches:
       - main  # 当main分支有推送时触发
 
+# 添加这个权限配置
+permissions:
+  contents: write  # 这给予工作流写入仓库内容的权限
+  pages: write     # 这给予工作流写入GitHub Pages的权限
+  id-token: write  # 这是部署到Pages所需的权限
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
