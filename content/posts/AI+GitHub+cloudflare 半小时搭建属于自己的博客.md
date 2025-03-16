@@ -17,19 +17,19 @@
 
 ### 步骤一：服务器选择（本着不花钱原则）
 
-![AI+GitHub+cloudflare 半小时搭建属于自己的博客](images/0.png)
+![AI+GitHub+cloudflare 半小时搭建属于自己的博客](/images/0.png)
 
 好，了解到Cloudflare提供免费计划，那这不是赛博活菩萨吗？那就决定是你了
 
 ### 步骤二：先了解下有哪些快速搭建博客方法### 
 
-![AI+GitHub+cloudflare 半小时搭建属于自己的博客-1](images/-1.png)
+![AI+GitHub+cloudflare 半小时搭建属于自己的博客-1](/images/-1.png)
 
 好，它说用CloudFlare加速GitHub页面搭建静态博客，可以，之前也简单了解过，看来这条路走的通。
 
 ### 步骤三：既然大的方向确定了，那就问它要方案### 
 
-![AI+GitHub+cloudflare 半小时搭建属于自己的博客-2](images/AI+GitHub+cloudflare半小时搭建属于自己的博客-2.png)
+![AI+GitHub+cloudflare 半小时搭建属于自己的博客-2](/images/AI+GitHub+cloudflare半小时搭建属于自己的博客-2.png)
 
 这里了解到Hugo，速度快，配置简单，那就开整
 
