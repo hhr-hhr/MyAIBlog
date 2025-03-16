@@ -1,5 +1,5 @@
 # 基本配置
-baseURL: "/"    # 网站URL，部署时需要修改为您的实际域名
+baseURL: "http://weuseai.org/"    # 网站URL，部署时需要修改为您的实际域名
 title: "我的博客"                   # 网站标题
 # 注意：paginate已弃用，使用pagination.pageSize替代
 pagination:
