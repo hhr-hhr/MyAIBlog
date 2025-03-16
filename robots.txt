@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://weuseai.org/MyAIBlog/sitemap.xml
+Sitemap: https://hhr-hhr.github.io/MyAIBlog/sitemap.xml
