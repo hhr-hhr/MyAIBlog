@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on 我的博客</title><link>https://weuseai.org/tags/hugo/</link><description>Recent content in Hugo on 我的博客</description><image><title>我的博客</title><url>https://weuseai.org/images/cover.jpg</url><link>https://weuseai.org/images/cover.jpg</link></image><generator>Hugo -- 0.145.0</generator><language>zh</language><lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://weuseai.org/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>我的第一篇博客</title><link>https://weuseai.org/2025/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://weuseai.org/2025/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid><description>这是我使用Hugo和PaperMod主题创建的第一篇博客</description><content:encoded><![CDATA[<h2 id="介绍">介绍</h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on 我的博客</title><link>https://weuseai.org/tags/hugo/</link><description>Recent content in Hugo on 我的博客</description><image><title>我的博客</title><url>https://weuseai.org/images/cover.jpg</url><link>https://weuseai.org/images/cover.jpg</link></image><generator>Hugo -- 0.145.0</generator><language>zh</language><lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://weuseai.org/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>AI+GitHub+cloudflare 半小时搭建属于自己的博客</title><link>https://weuseai.org/2025/03/ai-github-cloudflare-%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://weuseai.org/2025/03/ai-github-cloudflare-%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid><description>这是我使用Hugo和PaperMod主题创建的第一篇博客</description><content:encoded><![CDATA[<p><strong>前言</strong>：为什么要搭建属于自己的博客？</p>
+<p>为了通过输出倒逼输入。
+前段时间听了个播客说，正确的学习应该是先确定自己要输出的东西，然后在去查询资料，而不是在网上收集一堆信息，这些信息很可能会一直躺在收藏夹里，没啥用。</p>
+<p>再前一段时间看了个博客关于构建第二大脑和PARA，发现自己之前记的笔记没有动起来，好像也没啥用。</p>
+<p>博客地址：https://lutaonan.com/blog/apple-notes-and-para/</p>
+<p>理解PARA的关键是理解PARA的哲学：<strong>你记下的笔记应该要服务于你的行动</strong>。</p>
+<p>其实在大学期间也搭建过自己的博客，那会只是觉得把自己的学习和总结的内容发布到网上比较有意思，薅了阿里云的学生服务器，弄了个.cn的域名后发现网络要备案，又去折腾备案。</p>
+<h2 id="搭建步骤">搭建步骤：</h2>
+<h3 id="步骤一服务器选择本着不花钱原则">步骤一：服务器选择（本着不花钱原则）</h3>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客" loading="lazy" src="/images/0.png"></p>
+<p>好，了解到Cloudflare提供免费计划，那这不是赛博活菩萨吗？那就决定是你了</p>
+<h3 id="步骤二先了解下有哪些快速搭建博客方法">步骤二：先了解下有哪些快速搭建博客方法</h3>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-1" loading="lazy" src="/images/-1.png"></p>
+<p>好，它说用CloudFlare加速GitHub页面搭建静态博客，可以，之前也简单了解过，看来这条路走的通。</p>
+<h3 id="步骤三既然大的方向确定了那就问它要方案">步骤三：既然大的方向确定了，那就问它要方案</h3>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-2" loading="lazy" src="/images/AI+GitHub+cloudflare%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-2.png"></p>
+<p>这里了解到Hugo，速度快，配置简单，那就开整</p>
+<p>在网上做了这么多年消费者，看了这么多博客，那找一个自己喜欢的主题丢给AI问它是什么注意，好家伙它直接给我找出来了，并且给了主题开源的地址给我，那就点进去看一下，是不是要的主题。</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-3" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-3.png"></p>
+<p>好的，看到了，是我要的简约风格</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-4" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-4.png"></p>
+<p>确定好主题，那就让AI给部署步骤吧</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-5" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-5.png"></p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-6" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-6.png"></p>
+<p>老老实实的复制粘贴</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-7" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-7.png"></p>
+<p>查看下版本，没问题</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-8" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-8.png"></p>
+<p>好的，全部复制操作完了，然后启动本地预览下，好的，404，有问题，咋办？继续问AI，我老老实实复制你给的信息，最后你给我个Page Not Found，不合适吧</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-9" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-9.png"></p>
+<p>把启动的日志信息给它看，看看是啥原因，毕竟咱在搭建博客这一块也不专业，菜咱就多问。</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-10" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-10.png"></p>
+<p>找到原因了，因为它前面让我加了个config.yml 文件，而Hugo读取的是它默认的hugo.toml，没有改hugo.toml，所有它找不到主题，那自然就是空白页面了</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-11" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-11.png"></p>
+<p>这配置文件是toml格式，这是啥文件？没有用过，那问AI我可不可以用熟悉的yml文件？它说可以，那自然是换yml文件。（把hugo_bak.toml 改个名字就可以了）</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-12" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-12.png"></p>
+<p>让AI打工仔给我生成一个完整的配置文件，必须要有注释，没注释咋行呢？谁知道你这主题的配置参数是干啥用的，它生成完了，又是一顿复制粘贴。</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-13" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-13.png"></p>
+<p>重启后发现页面出来了，有点小瑕疵，没事，问题不大</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-14" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-14.png"></p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-15" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-15.png"></p>
+<p>好的，Hello Word 出来了，那我们这一步也完成了。</p>
+<h3 id="步骤四部署到github">步骤四：部署到GitHub</h3>
+<p>它真的很细心，我哭了，它告诉我要替换成自己的用户名，生怕我看不懂yourusername了。那还说什么？开整。</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-16" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-16.png"></p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-17" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-17.png"></p>
+<p>创建好仓库，然后把博客文件提交上去</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-18" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-18.png"></p>
+<p>设置Github Actions 自动部署</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-19" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-19.png"></p>
+<p>复制复制，统统复制，好的，果然，没有这么顺利，失败了，看提示信息是没有创建和更新workflow的权限，好，那去乖乖的加一下吧</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-20" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-20.png"></p>
+<p>果然加上可以了</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-21" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-21.png"></p>
+<p>下一步，下一步</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-22" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-22.png"></p>
+<p>好的，没有找到在哪，那让我的打工仔给我细细说下，好的，它脾气很好，怎么折磨它都会耐心的回复</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-23" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-23.png"></p>
+<p>好的，找到了，但是他不是绿色的勾勾✅，是红色的❌</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-24" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-24.png"></p>
+<p>点进去看下报错信息</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-25" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-25.png"></p>
+<p>第一次自己弄这自动部署的玩意，虽然做了两年开发了，但这些运维类的确实不懂，好的，菜就多问</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-26" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-26.png"></p>
+<p>OK，虽然不懂，但我会复制</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-27" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-27.png"></p>
+<p>在Actions设置中加下写的权限，之前只有读到权限，好的，这次它绿了，下一步下一步</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-28" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-28.png"></p>
+<h2 id="cloudflare设置">Cloudflare设置</h2>
+<p>真贴心，官网地址都直接给我了，那注册一个账号吧</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-29" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-29.png"></p>
+<p>那自然是选择Free
+<img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-30" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-30.png"></p>
+<p>买域名吗？不买，本着不花钱的原因，如果以后用的上再买</p>
+<p><img alt="AI+GitHub+cloudflare 半小时搭建属于自己的博客-31" loading="lazy" src="/images/AI+GitHub+cloudflare%20%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2-31.png"></p>
+]]></content:encoded></item><item><title>我的第一篇博客</title><link>https://weuseai.org/2025/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://weuseai.org/2025/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid><description>这是我使用Hugo和PaperMod主题创建的第一篇博客</description><content:encoded><![CDATA[<h2 id="介绍">介绍</h2>
 <p>这是我的第一篇博客文章，使用Hugo和PaperMod主题创建。</p>
 <h2 id="正文">正文</h2>
 <p>这里是文章的主要内容&hellip;</p>
