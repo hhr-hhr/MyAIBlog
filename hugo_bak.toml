@@ -1,0 +1,3 @@
+theme = "PaperMod"
+baseURL = "http://localhost:1313/"
+title = "My New Hugo Site"

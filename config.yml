@@ -1,0 +1,264 @@
+# 基本配置
+baseURL: "https://example.com/"    # 网站URL，部署时需要修改为您的实际域名
+title: "我的博客"                   # 网站标题
+# 注意：paginate已弃用，使用pagination.pageSize替代
+pagination:
+  pageSize: 10                     # 每页显示的文章数量
+theme: "PaperMod"                  # 主题名称
+defaultContentLanguage: "zh"       # 默认内容语言
+
+# 多语言支持
+languages:
+  zh:
+    languageName: "中文"
+    weight: 1                      # 语言权重，数字越小优先级越高
+    title: "我的博客"               # 中文网站标题
+    # 注意：profileMode已移至params下
+    menu:
+      main:
+        - identifier: search       # 唯一标识符
+          name: 搜索               # 显示名称
+          url: /search/           # 链接URL
+          weight: 1               # 菜单项顺序，数字越小越靠前
+        - identifier: archives
+          name: 归档
+          url: /archives/
+          weight: 2
+        - identifier: categories
+          name: 分类
+          url: /categories/
+          weight: 3
+        - identifier: tags
+          name: 标签
+          url: /tags/
+          weight: 4
+        - identifier: about
+          name: 关于
+          url: /about/
+          weight: 5
+
+# 内容目录设置
+contentDir: "content"              # 内容目录
+staticDir: "static"                # 静态文件目录
+
+# 构建设置
+enableRobotsTXT: true              # 启用robots.txt生成
+buildDrafts: false                 # 是否构建草稿
+buildFuture: false                 # 是否构建未来日期的文章
+buildExpired: false                # 是否构建过期文章
+enableEmoji: true                  # 启用emoji表情支持
+enableGitInfo: false               # 禁用Git信息（避免Git错误）
+hasCJKLanguage: true               # 启用中日韩语言支持（正确计算字数）
+
+# URL设置
+permalinks:                        # 自定义永久链接格式
+  posts: "/:year/:month/:slug/"    # 文章URL格式
+
+# 输出设置
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON                         # 用于搜索功能
+
+# 分类法设置
+taxonomies:
+  category: "categories"           # 分类
+  tag: "tags"                      # 标签
+  series: "series"                 # 系列
+
+# 参数设置
+params:
+  # 环境设置
+  env: production                  # 环境（production或development）
+  
+  # 个人资料模式设置
+  profileMode:
+    enabled: true                  # 启用个人资料模式
+    title: "你好，世界！"           # 个人资料标题
+    subtitle: "这是我的个人博客"    # 个人资料副标题
+    imageUrl: "/images/profile.jpg" # 个人头像URL
+    imageWidth: 120                # 头像宽度
+    imageHeight: 120               # 头像高度
+    buttons:
+      - name: 文章
+        url: posts
+      - name: 标签
+        url: tags
+      - name: 分类
+        url: categories
+  
+  # SEO设置
+  description: "这是我的个人博客，分享技术、生活和思考"  # 网站描述
+  keywords: [博客, 技术, 编程, Hugo, PaperMod]         # 网站关键词
+  author: "您的名字"                # 作者名
+  images: ["/images/cover.jpg"]    # 默认社交媒体分享图片
+  DateFormat: "2006年01月02日"      # 日期格式
+
+  # 显示设置
+  defaultTheme: auto               # 默认主题（dark, light, auto）
+  disableThemeToggle: false        # 是否禁用主题切换按钮
+  ShowShareButtons: true           # 显示分享按钮
+  ShowReadingTime: true            # 显示阅读时间
+  ShowBreadCrumbs: true            # 显示面包屑导航
+  ShowPostNavLinks: true           # 显示上一篇/下一篇导航
+  ShowCodeCopyButtons: true        # 显示代码复制按钮
+  ShowFullTextinRSS: true          # RSS中显示全文
+  ShowToc: true                    # 显示目录
+  TocOpen: false                   # 目录默认展开状态
+  
+  # 首页信息设置（如果不使用profileMode）
+  homeInfoParams:
+    Title: "欢迎来到我的博客 👋"    # 首页标题
+    Content: >                     # 首页内容
+      欢迎访问我的个人博客！
+      
+      - 这里分享我的技术学习、生活感悟和有趣发现
+      
+      - 使用Hugo和PaperMod主题构建
+  
+  # 社交图标设置
+  socialIcons:
+    - name: github
+      url: "https://github.com/yourusername"
+    - name: twitter
+      url: "https://twitter.com/yourusername"
+    - name: zhihu
+      url: "https://www.zhihu.com/people/yourusername"
+    - name: bilibili
+      url: "https://space.bilibili.com/youruserid"
+    - name: email
+      url: "mailto:your.email@example.com"
+    - name: rss
+      url: "index.xml"
+  
+  # 编辑链接设置
+  editPost:
+    URL: "https://github.com/yourusername/blog/blob/main/content"  # 编辑链接前缀
+    Text: "建议修改"                # 编辑链接文本
+    appendFilePath: true           # 是否附加文件路径
+  
+  # 评论系统设置
+  comments: true                   # 启用评论
+  # 以下选择一种评论系统
+  disqusShortname: ""              # Disqus短名称
+  
+  # utterances设置（GitHub Issues评论系统）
+  utterances:
+    repo: "yourusername/blog-comments"  # GitHub仓库
+    issueTerm: "pathname"          # Issue映射方式
+    label: "comment"               # Issue标签
+    theme: "preferred-color-scheme" # 主题
+  
+  # giscus设置（GitHub Discussions评论系统）
+  giscus:
+    repo: "yourusername/blog-comments"
+    repoId: ""                     # 仓库ID
+    category: "Comments"           # 分类
+    categoryId: ""                 # 分类ID
+    mapping: "pathname"            # 映射方式
+    reactionsEnabled: "1"          # 启用反应
+    emitMetadata: "0"              # 发送元数据
+    theme: "light"                 # 主题
+  
+  # 搜索设置
+  fuseOpts:
+    isCaseSensitive: false         # 区分大小写
+    shouldSort: true               # 结果排序
+    location: 0                    # 匹配位置
+    distance: 1000                 # 匹配距离
+    threshold: 0.4                 # 匹配阈值
+    minMatchCharLength: 0          # 最小匹配字符长度
+    keys: ["title", "permalink", "summary", "content"]  # 搜索字段
+  
+  # 资产设置
+  assets:
+    favicon: "/favicon.ico"        # 网站图标
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+  
+  # 覆盖设置
+  cover:
+    hidden: false                  # 隐藏封面
+    hiddenInList: false            # 在列表中隐藏封面
+    hiddenInSingle: false          # 在单篇文章中隐藏封面
+    responsiveImages: true         # 响应式图片
+    linkFullImages: true           # 链接到全尺寸图片
+  
+  # 代码高亮设置
+  highlight:
+    noClasses: false               # 使用类而非内联样式
+    codeFences: true               # 启用代码围栏
+    guessSyntax: true              # 猜测语法
+    lineNos: true                  # 显示行号
+    style: "monokai"               # 高亮样式
+  
+  # 分析和SEO设置
+  analytics:
+    google:
+      SiteVerificationTag: ""      # Google站点验证标签
+    bing:
+      SiteVerificationTag: ""      # Bing站点验证标签
+    baidu:
+      SiteVerificationTag: ""      # 百度站点验证标签
+  
+  # Google Analytics设置
+  googleAnalytics: ""              # Google Analytics ID
+  
+  # 百度统计设置
+  baiduAnalytics: ""               # 百度统计ID
+  
+  # Schema.org设置
+  schema:
+    publisherName: "您的名字"       # 发布者名称
+    publisherLogo: "/logo.png"     # 发布者Logo
+  
+  # 其他设置
+  label:
+    text: "首页"                    # 导航标签文本
+    icon: "/logo.png"              # 导航标签图标
+    iconHeight: 35                 # 图标高度
+  
+  # 自定义CSS
+  customCSS:
+    - "css/custom.css"             # 自定义CSS文件路径
+  
+  # 自定义JS
+  customJS:
+    - "js/custom.js"               # 自定义JS文件路径
+
+# 隐私设置
+privacy:
+  disqus:
+    disable: false                 # 禁用Disqus
+  googleAnalytics:
+    anonymizeIP: true              # 匿名化IP
+    disable: false                 # 禁用Google Analytics
+    respectDoNotTrack: true        # 尊重Do Not Track
+    useSessionStorage: true        # 使用会话存储
+  instagram:
+    disable: false                 # 禁用Instagram
+    simple: true                   # 使用简单嵌入
+  # 注意：twitter已更新为x
+  x:
+    enableDNT: true                # 启用Do Not Track
+    simple: true                   # 使用简单嵌入
+  vimeo:
+    disable: false                 # 禁用Vimeo
+    enableDNT: true                # 启用Do Not Track
+    simple: true                   # 使用简单嵌入
+  youtube:
+    disable: false                 # 禁用YouTube
+    privacyEnhanced: true          # 增强隐私模式
+
+# Markdown设置
+markup:
+  goldmark:
+    renderer:
+      unsafe: true                 # 允许HTML
+  tableOfContents:
+    endLevel: 3                    # 目录结束级别
+    ordered: false                 # 有序列表
+    startLevel: 2                  # 目录开始级别
