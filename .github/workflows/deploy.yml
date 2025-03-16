@@ -34,4 +34,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          cname: weuseai.org  # 添加这一行，指定您的自定义域名
 
