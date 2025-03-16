@@ -74,7 +74,7 @@ params:
   
   # 个人资料模式设置
   profileMode:
-    enabled: true                  # 启用个人资料模式
+    enabled: false                  # 启用个人资料模式
     title: "你好，世界！"           # 个人资料标题
     subtitle: "这是我的个人博客"    # 个人资料副标题
     imageUrl: "/images/profile.jpg" # 个人头像URL
@@ -115,12 +115,11 @@ params:
       
       - 这里分享我的技术学习、生活感悟和有趣发现
       
-      - 使用Hugo和PaperMod主题构建
   
   # 社交图标设置
   socialIcons:
     - name: github
-      url: "https://github.com/yourusername"
+      url: "https://github.com/hhr-hhr"
     - name: twitter
       url: "https://twitter.com/yourusername"
     - name: zhihu
