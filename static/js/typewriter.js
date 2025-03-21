@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (typewriterElement) {
     // 初始化Typed.js
     new Typed('.Typewriter__wrapper', {
-      strings: ['USEAI','Build My Passive Income'], // 替换为您想要显示的文本
+      strings: ['Build My Passive Income'], // 替换为您想要显示的文本
       typeSpeed: 50,          // 打字速度
       backSpeed: 30,          // 删除速度
       backDelay: 3000,        // 删除前的延迟
