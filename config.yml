@@ -12,7 +12,7 @@ languages:
   zh:
     languageName: "中文"
     weight: 1                      # 语言权重，数字越小优先级越高
-    title: "我的博客"               # 中文网站标题
+    title: "WEUSEAI"               # 中文网站标题
     # 注意：profileMode已移至params下
     menu:
       main:
@@ -96,8 +96,8 @@ params:
   DateFormat: "2006年01月02日"      # 日期格式
 
   # 显示设置
-  defaultTheme: auto               # 默认主题（dark, light, auto）
-  disableThemeToggle: false        # 是否禁用主题切换按钮
+  defaultTheme: light               # 默认主题（dark, light, auto）
+  disableThemeToggle: true        # 是否禁用主题切换按钮
   ShowShareButtons: true           # 显示分享按钮
   ShowReadingTime: true            # 显示阅读时间
   ShowBreadCrumbs: true            # 显示面包屑导航
