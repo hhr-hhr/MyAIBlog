@@ -15,3 +15,24 @@
   50% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+
+:root {
+  --main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.post-title, h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+
+/* 为标题添加彩色效果，类似bmpi.dev的标题 */
+.typewriter-title span:nth-child(1) { color: #cda25a; }
+.typewriter-title span:nth-child(2) { color: #9f7aea; }
+.typewriter-title span:nth-child(3) { color: #3182ce; }
