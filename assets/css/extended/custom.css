@@ -1,0 +1,17 @@
+/* 打字机效果样式 */
+.Typewriter__wrapper {
+  display: inline-block;
+  color: inherit; /* 使用继承的颜色，与主题保持一致 */
+}
+
+.Typewriter__cursor {
+  display: inline-block;
+  color: inherit;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
